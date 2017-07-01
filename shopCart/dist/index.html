@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+  <link rel="stylesheet" href="fa/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="bundle.css">
+  <title>Simple Shopping Cart</title>
+</head>
+
+<body>
+  <!--MODAL-->
+  <div class="modal modal-product">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <section class="container">
+    <section>
+      <p class="title">Simple Shopping Cart</p>
+    </section>
+
+    <div class="loader"></div>
+    <section class="admin-login"> 
+      <button class="button is-info" data-admin-login-btn>Admin Login</button>
+    </section>
+
+    <section style="display:none" class="admin-section">
+      <button class="button is-primary" data-add-product-btn>Add Product</button>
+    </section>
+    <section class="flex products-cart">
+
+      <section class="products flex-2 flex justify-space"></section>
+
+      <section class="cart flex-1">
+        <p class="title is-3" style="text-align: left;">Your Cart</p>
+        <p class="margin" data-cart-status>Your shopping cart is empty</p>
+        <section class="cart-items"></section>
+        <p class="title is-3">Total of: <span data-cart-total class="title is-3">0</span>$</p>
+        <button class="button is-success is-medium" data-checkout-btn>Checkout</button>
+      </section>
+
+    </section>
+
+
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
